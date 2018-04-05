@@ -1,0 +1,63 @@
+# Boxes
+
+box:
+  'vote':
+      item:
+        name: "&eVote Box &7(Right Click)"
+        lore:
+        - "&7Hidden Gems!"
+        type: CHEST;0
+      setting:
+        time: 3 # Seconds to 'Break Box'
+        permission: true
+        min-rewards: 1
+        max-rewards: 2
+      pre-rewards:
+      - "[Title] &6Breaking Box.."
+      break-rewards:
+      - "[Title] &eBox Looted!"
+      - "[Sound] ENTITY_ILLUSION_ILLAGER_CAST_SPELL"
+      rewards:
+          'easy':
+            reward:
+            - "[Console] give %player% iron_ingot 1"
+            - "[Player] me woo!"
+            chance: 80
+          'hard':
+            reward:
+            - "[Console] give %player% diamond 1"
+            - "[Player] me woo hard rewards!"
+            chance: 20
+
+message:
+    root:
+    - "&6[&eBoxes&6] &eRunning &fv%version% &eby &6Chazmondo&e."
+    reload:
+    - "&6[&eBoxes&6] &eSuccessfully Reloaded."
+    help:
+    - ""
+    - "&6[&eBoxes&6] &eHelp Commands:"
+    - ""
+    - "&6- &e/boxes reload"
+    - "&6- &e/boxes give <player> <box> [amount]"
+    - "&6- &e/boxes giveall <box> [amount]"
+    - ""
+    no-permission:
+    - "&6[&eBoxes&6] &eSorry, you do not have permission to use that."
+    cooldown:
+    - "&cWait %time% seconds before opening another."
+    given:
+    - "&7Given %player% %amount%x of %type% box."
+    received:
+    - "&7Received %player% %amount%x of %type% box."
+    unknown:
+    - "&7You have typed an invalid box name."
+
+    list-header:
+    - ""
+    - "&7Listing Boxes:"
+    - ""
+    list-format:
+    - "&8- &e%type%"
+    list-footer:
+    - ""
