@@ -1,7 +1,7 @@
-package com.cjoseph.boxes.api;
+package net.chazza.boxes.api;
 
-import com.cjoseph.boxes.Boxes;
-import com.cjoseph.boxes.util.ColorUtil;
+import net.chazza.boxes.Boxes;
+import net.chazza.boxes.util.ColorUtil;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;

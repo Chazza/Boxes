@@ -1,4 +1,4 @@
-package com.cjoseph.boxes.util;
+package net.chazza.boxes.util;
 
 import java.util.ArrayList;
 import java.util.List;

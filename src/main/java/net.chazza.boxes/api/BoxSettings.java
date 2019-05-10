@@ -1,4 +1,4 @@
-package com.cjoseph.boxes.api;
+package net.chazza.boxes.api;
 
 public class BoxSettings {
     private int breakTime;

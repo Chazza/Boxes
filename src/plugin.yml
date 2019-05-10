@@ -1,5 +1,0 @@
-name: Boxes
-version: ${project.version}
-main: ${project.groupId}.boxes.Boxes
-author: Chazmondo
-website: "https://c-joseph.com/"

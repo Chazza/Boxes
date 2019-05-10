@@ -1,8 +1,8 @@
-package com.cjoseph.boxes.command;
+package net.chazza.boxes.command;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.CommandAlias;
-import com.cjoseph.boxes.Boxes;
+import net.chazza.boxes.Boxes;
 import org.bukkit.command.CommandSender;
 
 public class MainCommand extends BaseCommand {

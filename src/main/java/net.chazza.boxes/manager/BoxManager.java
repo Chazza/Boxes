@@ -1,7 +1,7 @@
-package com.cjoseph.boxes.manager;
+package net.chazza.boxes.manager;
 
-import com.cjoseph.boxes.Boxes;
-import com.cjoseph.boxes.api.Box;
+import net.chazza.boxes.Boxes;
+import net.chazza.boxes.api.Box;
 import com.google.common.collect.Maps;
 
 import java.util.HashMap;

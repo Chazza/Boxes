@@ -1,7 +1,7 @@
-package com.cjoseph.boxes.action;
+package net.chazza.boxes.action;
 
-import com.cjoseph.boxes.Boxes;
-import com.cjoseph.boxes.util.ColorUtil;
+import net.chazza.boxes.Boxes;
+import net.chazza.boxes.util.ColorUtil;
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;

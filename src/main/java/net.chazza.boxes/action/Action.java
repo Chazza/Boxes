@@ -1,4 +1,4 @@
-package com.cjoseph.boxes.action;
+package net.chazza.boxes.action;
 
 public class Action {
 

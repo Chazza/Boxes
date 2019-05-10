@@ -1,9 +1,9 @@
-package com.cjoseph.boxes.event;
+package net.chazza.boxes.event;
 
-import com.cjoseph.boxes.Boxes;
-import com.cjoseph.boxes.api.Box;
-import com.cjoseph.boxes.manager.BoxManager;
-import com.cjoseph.boxes.util.ColorUtil;
+import net.chazza.boxes.Boxes;
+import net.chazza.boxes.api.Box;
+import net.chazza.boxes.manager.BoxManager;
+import net.chazza.boxes.util.ColorUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

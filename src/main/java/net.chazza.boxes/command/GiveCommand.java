@@ -1,4 +1,4 @@
-package com.cjoseph.boxes.command;
+package net.chazza.boxes.command;
 
 import co.aikar.commands.BaseCommand;
 import co.aikar.commands.annotation.CommandAlias;
@@ -6,10 +6,10 @@ import co.aikar.commands.annotation.Default;
 import co.aikar.commands.annotation.Optional;
 import co.aikar.commands.annotation.Subcommand;
 import co.aikar.commands.contexts.OnlinePlayer;
-import com.cjoseph.boxes.Boxes;
-import com.cjoseph.boxes.api.Box;
-import com.cjoseph.boxes.manager.BoxManager;
-import com.cjoseph.boxes.util.ColorUtil;
+import net.chazza.boxes.Boxes;
+import net.chazza.boxes.api.Box;
+import net.chazza.boxes.manager.BoxManager;
+import net.chazza.boxes.util.ColorUtil;
 import org.bukkit.command.CommandSender;
 import org.bukkit.inventory.ItemStack;
 

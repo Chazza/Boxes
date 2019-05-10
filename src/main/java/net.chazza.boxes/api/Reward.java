@@ -1,4 +1,4 @@
-package com.cjoseph.boxes.api;
+package net.chazza.boxes.api;
 
 import java.util.List;
 

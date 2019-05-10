@@ -1,22 +1,29 @@
-package com.cjoseph.boxes;
+package net.chazza.boxes;
 
 import co.aikar.commands.BukkitCommandManager;
-import com.cjoseph.boxes.action.Action;
-import com.cjoseph.boxes.action.ActionManager;
-import com.cjoseph.boxes.action.ActionType;
-import com.cjoseph.boxes.api.Box;
-import com.cjoseph.boxes.api.BoxBuilder;
-import com.cjoseph.boxes.api.BoxSettings;
-import com.cjoseph.boxes.api.Reward;
-import com.cjoseph.boxes.command.*;
-import com.cjoseph.boxes.event.BoxInteractEvent;
-import com.cjoseph.boxes.manager.BoxManager;
-import com.cjoseph.boxes.util.ColorUtil;
+import net.chazza.boxes.action.Action;
+import net.chazza.boxes.action.ActionManager;
+import net.chazza.boxes.action.ActionType;
+import net.chazza.boxes.api.Box;
+import net.chazza.boxes.api.BoxBuilder;
+import net.chazza.boxes.api.BoxSettings;
+import net.chazza.boxes.api.Reward;
+import net.chazza.boxes.command.GiveCommand;
+import net.chazza.boxes.command.HelpCommand;
+import net.chazza.boxes.command.ListCommand;
+import net.chazza.boxes.command.MainCommand;
+import net.chazza.boxes.command.ReloadCommand;
+import net.chazza.boxes.event.BoxInteractEvent;
+import net.chazza.boxes.manager.BoxManager;
+import net.chazza.boxes.util.ColorUtil;
 import com.google.common.collect.Maps;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 public class Boxes extends JavaPlugin {
     private ActionManager actionManager;
@@ -48,7 +55,7 @@ public class Boxes extends JavaPlugin {
         playerCooldowns = Maps.newHashMap();
 
         commandManager = new BukkitCommandManager(this);
-        commandManager.getCommandReplacements().addReplacement("mainCommand", "boxes|box|crate|crates");
+        commandManager.getCommandReplacements().addReplacement("mainCommand", "boxes|box");
 
         new MainCommand(this);
         new ReloadCommand(this);
@@ -65,7 +72,6 @@ public class Boxes extends JavaPlugin {
     }
 
     private void setupActions(){
-        actionManager = new ActionManager(this);
         actionManager = new ActionManager(this);
         actionManager.addAction(new Action("[CONSOLE]").withType(ActionType.CONSOLE_COMMAND).compile());
         actionManager.addAction(new Action("[PLAYER]").withType(ActionType.PLAYER_COMMAND).compile());
