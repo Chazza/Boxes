@@ -1,2 +1,3 @@
-# Boxes
-A Unique Crate System for Minecraft Servers Running Spigot!
+# Player Boxes
+
+A unique crate system for spigot minecraft servers!
